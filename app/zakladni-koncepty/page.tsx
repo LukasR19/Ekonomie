@@ -95,7 +95,7 @@ export default function ZakladniKonceptyHub() {
 
             {/* Ikona */}
             <div className="mb-6 w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center group-hover:bg-blue-50 transition-colors">
-              {React.cloneElement(sub.icon as React.ReactElement, { size: 28 })}
+              {React.cloneElement(sub.icon as React.ReactElement, {})}
             </div>
 
             {/* Text */}
