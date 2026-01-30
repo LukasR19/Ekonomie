@@ -1,16 +1,14 @@
-import type { Metadata } from "next";
-import "./globals.css";
 import Navbar from "@/components/Navbar";
-import SidebarWrapper from "@/components/SidebarWrapper";
 import Footer from "@/components/Footer";
-import MainContentWrapper from "@/components/MainContentWrapper"; // Importujeme tu novou věc
+import SidebarLayout from "@/components/SidebarLayout"; // Importujeme ten nový soubor
 import { Inter } from "next/font/google";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Ekonomie.cz | Interaktivní učebnice",
-  description: "Moderní vzdělávání",
+export const metadata = {
+  title: "Ekonomie.cz",
+  description: "Interaktivní učebnice",
 };
 
 export default function RootLayout({
@@ -22,27 +20,20 @@ export default function RootLayout({
     <html lang="cs" className="scroll-smooth">
       <body className={`${inter.className} bg-white text-slate-900 flex flex-col min-h-screen`}>
         
-        {/* 1. NAVBAR */}
         <Navbar />
 
-        {/* 2. HLAVNÍ BLOK (obaluje Sidebar i Content) */}
-        {/* pt-16 zajistí, že obsah nezačíná pod Navbar, ale pod ním */}
-        <div className="flex flex-1 pt-16">
+        {/* pt-16 aby to nebylo pod navbarem */}
+        <div className="pt-16 flex flex-1 flex-col">
           
-          {/* Sidebar (zobrazí se jen někde) */}
-          <SidebarWrapper /> 
-          
-          {/* Main Content (posouvá se doprava dle potřeby) */}
-          <MainContentWrapper>
+          {/* Všechno zabalíme do SidebarLayout */}
+          <SidebarLayout>
             {children}
-          </MainContentWrapper>
+          </SidebarLayout>
 
         </div>
 
-        {/* 3. FOOTER */}
-        {/* z-50 zajistí, že bude nad vším ostatním */}
         <div className="relative z-50 bg-white">
-             <Footer />
+           <Footer />
         </div>
         
       </body>

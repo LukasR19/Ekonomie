@@ -58,14 +58,13 @@ useEffect(() => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
   return (
-    // Změna: fixed pozice, top-16 (pod navbarem), světlé pozadí bg-slate-50
-    <aside className="fixed left-0 top-16 bottom-0 w-72 bg-slate-50 border-r border-slate-200 flex flex-col overflow-y-auto pb-10 z-40 scrollbar-thin scrollbar-thumb-slate-200">
+    <aside className="h-full flex flex-col overflow-y-auto pb-10 scrollbar-thin scrollbar-thumb-slate-200">
+    
+    <div className="px-3 py-2 space-y-1">
       
-      {/* Logo odstraněno, přidáno horní odsazení */}
-      <div className="p-4 pt-6 space-y-1">
-        <h3 className="px-3 text-xs font-black uppercase text-slate-400 tracking-widest mb-4">
-          Obsah učebnice
-        </h3>
+      <h3 className="px-3 text-xs font-black uppercase text-slate-400 tracking-widest mb-2 mt-0 pt-2">
+        Obsah učebnice
+      </h3>
 
         {CHAPTERS.map((chapter) => {
           // Zjistíme, jestli jsme v této kapitole (pro zvýraznění)
