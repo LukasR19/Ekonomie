@@ -7,6 +7,7 @@ import DefinitionBox from "@/components/DefinitionBox";
 import ExplanationBox from "@/components/ExplanationBox";
 import GoodsClassification from "@/components/zakladni-koncepty/GoodsClassification";
 import UtilityChart from '@/components/zakladni-koncepty/UtilityChart';
+import QuizCarousel from '@/components/QuizCarousel';
 export default function UvodDoEkonomie() {
   return (
     <div className="max-w-4xl mx-auto pb-20 pt-5">
@@ -248,13 +249,15 @@ export default function UvodDoEkonomie() {
           Vyřešil tím tak paradox vody a diamantů - Proč je voda, která je nezbytná pro život, tak levná, zatímco diamanty, které jsou v podstatě zbytečné, jsou tak drahé?
           Pojďme se podrobněji podívat na to, co určuje hodnotu. Dejme tomu, že chceme určit hodnotu vody. Opět si můžeme představit našeho cestovatele na poušti s láhvemi vody. 
           Má před sebou 5 láhví, které jsou schopné uspokojit tyto potřeby v daném pořadí:
-          <ul className="list-disc pl-6">
+        </p>
+        <ul className="list-disc pl-6">
             <li>Zachránit život</li>
             <li>Zahnat menší žízeň</li>
             <li>Umýt se</li>
             <li>Osvěžit se</li>
             <li>Dát napít svému psovi</li>
-          </ul>
+        </ul>
+        <p>
           Chceme určit hodnotu jedné láhve. Mohlo by se zdát, že pro nás bude mít téměř nevyčíslitelnou hodnotu, protože nám zachrání život.
           Hodnota je ale určena mezním užitkem z posledního možného využití. Hodnota láhve je tedy daná užitkem z napití našeho psa nikoliv užitkem ze zachrány našeho života.
           Přesně to způsobuje, že voda nezbytná k životu je levnější než diamanty. 
@@ -264,6 +267,32 @@ export default function UvodDoEkonomie() {
             Když se rozmýšlíme, zda něco koupit či nekoupit, srovnáváme hodnotu tedy mezní užitek daného statku a peněz, které za tento statek musíme zaplatit. 
             Je to tedy stejné, jako když jsme srovnávali čokoládové sušenky a jablka.
         </p>
+        <p className='text-3xl font-bold text-black'>
+          Co si z toho odnést?
+        </p>
+        <p>
+          V této podkapitole jsme se dozvěděli, co v ekonomii myslíme statkem, vzácností, užitkem a hodnotou. Zkuste si své znalosti z této podkapitoly otestovat níže. Dále se budeme věnovat výrobním faktorům.
+        </p>
+        <QuizCarousel>
+          <InteractiveQuestion
+            question="Co musí splňovat veřejný statek?"
+            options={[ "Jeho množství převyšuje lidské potřeby", "Jeho hodnota je nulová nebo záporná", "Je nevylučitelný a nerivalitní ve spotřebě"]}
+            correctAnswer={2}
+            explanation='Spotřeba veřejného statku jedním spotřebitelem nesníží množství dostupné pro ostatní. Zároveň je velmi nákladné ze spotřeby statku kohokoliv vyloučit. Je tedy nerivalitní a nevylučitelný.'
+            />
+            <InteractiveQuestion
+            question="Který z následujících statků považujeme za volný?"
+            options={[ "Vzduch", "Pitná voda", "Zlato"]}
+            correctAnswer={0}
+            explanation='Volný statek je takový, jehož množství převyšuje lidké potřeby. Poznáme ho také tak, že nemá ekonomickou hodnotu.'
+            />
+            <InteractiveQuestion
+            question="Co říká zákon klesajícího mezního užitku?"
+            options={[ "Užitek, který získáme přidáním každé další jednotky se zmenšuje", "Celkový užitek se zmenšuje, protože je součtem mezních užitků všech jednotek, klerý klesá", "Mezní užitek je vždy záporný, jelikož předchozí jednotka nám vždy přinese více užitku"]}
+            correctAnswer={0}
+            explanation='Mezní užitek je užitek z každé další přidané jednotky. Protože každá další jednotka může naplnit jen ty potřeby, které nenaplnily jednotky předchozí, bude vždy klesat.'
+            />
+        </QuizCarousel> 
       </article>
 
       {/* NAVIGACE MEZI PODKAPITOLAMI */}
@@ -273,7 +302,7 @@ export default function UvodDoEkonomie() {
     {/* Předchozí kapitola */}
     <div className="flex justify-start">
       <Link 
-        href="/zakladni-koncepty/predchozi-tema" 
+        href="/zakladni-koncepty/metodologie" 
         className="group flex items-start gap-3 max-w-[280px] text-left transition-all"
       >
         {/* Šipka zůstává nahoře u prvního řádku díky mt-1 */}
@@ -290,13 +319,13 @@ export default function UvodDoEkonomie() {
     {/* Další kapitola */}
     <div className="flex justify-end">
       <Link 
-        href="/zakladni-koncepty/dalsi-tema" 
+        href="/zakladni-koncepty/vyrobni-faktory" 
         className="group flex items-start text-right gap-3 max-w-[280px] transition-all"
       >
         <div className="flex flex-col">
           <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1">Další</span>
           <span className="text-sm font-bold text-blue-600 group-hover:text-blue-700 leading-snug">
-            Hranice produkčních možností a náklady obětované příležitosti
+            Výrobní faktory
           </span>
         </div>
         {/* Šipka vpravo */}

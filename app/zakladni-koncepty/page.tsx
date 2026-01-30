@@ -9,7 +9,8 @@ import {
   FileText, 
   Award, 
   ArrowRight,
-  ChevronRight
+  ChevronRight,
+  ChartPie
 } from 'lucide-react';
 
 // Seznam podkapitol pro snadnou správu
@@ -22,6 +23,13 @@ const SUBCHAPTERS = [
     time: "5 min"
   },
   {
+    title: "Metodologie a ekonomické modely",
+    slug: "metodologie",
+    desc: "Jak ekonomové pracují a co jim pomáhá chápat náš svět?",
+    icon: <ChartPie className="text-purple-600"/>,
+    time: "5 min"
+  },
+  {
     title: "Statek, vzácnost, užitek",
     slug: "statek-vzacnost-uzitek-hodnota",
     desc: "Proč nemůžeme mít všechno a jak určujeme hodnotu věcí kolem nás?",
@@ -31,23 +39,30 @@ const SUBCHAPTERS = [
   {
     title: "Výrobní faktory",
     slug: "vyrobni-faktory",
-    desc: "Půda, práce, kapitál a technologie – základní stavební kameny bohatství.",
+    desc: "Půda, práce, kapitál a technologie - jaké jsou základní stavební kameny bohatství?",
     icon: <Zap className="text-amber-500" />,
     time: "7 min"
   },
   {
-    title: "Ekonomické systémy",
-    slug: "ekonomicke-systemy",
-    desc: "Zvyková, příkazová a tržní ekonomika. Jak různé společnosti řeší své potřeby?",
+    title: "Hranice produkčních možností a náklady obětované příležitosti",
+    slug: "hranice-produkcnich-moznosti",
+    desc: "Proč si někdy musíme vzbrat a jakou to má cenu?",
+    icon: <FileText className="text-red-500" />,
+    time: "12 min"
+  },
+  {
+    title: "Komparativní a absolutní výhoda",
+    slug: "komparativni-absolutni-vyhoda",
+    desc: "Proč je spolupráce výhodná?",
     icon: <TrendingUp className="text-green-500" />,
     time: "8 min"
   },
   {
-    title: "Hranice produkčních možností",
-    slug: "hranice-produkcnich-moznosti",
-    desc: "Vizualizace efektivity a nákladů obětované příležitosti.",
-    icon: <FileText className="text-red-500" />,
-    time: "12 min"
+    title: "Nabídka, poptávka a tržní rovnováha",
+    slug: "nabidka-poptavka",
+    desc: "Zvyková, příkazová a tržní ekonomika. Jak různé společnosti řeší své potřeby?",
+    icon: <TrendingUp className="text-green-500" />,
+    time: "8 min"
   },
   {
     title: "Závěrečný test kapitoly",

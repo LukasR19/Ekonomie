@@ -12,11 +12,11 @@ export default function Footer() {
             Vše o ekonomii na jednom místě.
           </p>
         </div>
-
+      {/*
         <div>
           <h5 className="text-white font-bold mb-4 text-sm uppercase tracking-wider">Odkazy</h5>
           <ul className="space-y-2 text-sm">
-            <li><a href="/o-autorovi" className="hover:text-white transition-colors">O autorovi</a></li>
+            <li><a href="/o-autorovi" className="hover:text-white transition-colors">O projektu</a></li>
             <li><a href="/materialy" className="hover:text-white transition-colors">Ke stažení</a></li>
             <li><a href="/clanky" className="hover:text-white transition-colors">Blog</a></li>
           </ul>
@@ -27,10 +27,10 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
             <li>info@ekonomie.cz</li>
             <li className="flex items-center gap-1">
-              Tvořeno s <Heart size={12} className="text-red-500 fill-red-500" /> v Česku
+              
             </li>
           </ul>
-        </div>
+        </div>*/}
       </div>
       
       <div className="mt-12 pt-8 border-t border-slate-800 text-center text-xs opacity-50">

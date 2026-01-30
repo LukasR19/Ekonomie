@@ -23,16 +23,16 @@ const CHAPTERS = [
     title: "Mikroekonomie",
     slug: "mikroekonomie",
     subchapters: [
-      { title: "Nabídka a poptávka", slug: "nabidka-poptavka" },
-      { title: "Tržní rovnováha", slug: "trzni-rovnovaha" }
+      { title: "", slug: "" },
+      { title: "", slug: "" }
     ]
   },
   {
     title: "Makroekonomie",
     slug: "makroekonomie",
     subchapters: [
-      { title: "HDP", slug: "hdp" },
-      { title: "Inflace", slug: "inflace" }
+      { title: "", slug: "" },
+      { title: "", slug: "" }
     ]
   },
   { title: "Peníze a bankovnictví", slug: "penize-a-bankovnictvi", subchapters: [] },

@@ -58,9 +58,9 @@ export default function UvodDoEkonomie() {
           To může vytvořit zajímavé situace, kdy lidé dokáží ekonomickou prognózu potvrdit či vyvrátit už jen tím, že se o ní dozví a na jejím základě změní své chování. Typickým příkladem budiž akciový trh. Pokud světová banka vydá prognózu, že trh v následujícím roce bude padat, lidé začnou na základě toho své akcie masivně prodávat, čímž prognózu potvrdí.
           V ekonomii je také zpravidla nemožné provádět experimenty s izolovanými proměnnými a spoléhá se tedy na teoretické modely a analýzu historických dat.
         </p>
-        <ExplanationBox title="ekonomie a ekonomika">
+        <DefinitionBox title="ekonomie a ekonomika">
             Tyto dva pojmy se lidem často pletou. Ekonomie (angl. economics) je vědní obor a ekonomika (angl. economy) představuje hospodaření určitého celku. 
-        </ExplanationBox>
+        </DefinitionBox>
         <p>
           Ekonomii dělíme podle předmětu zkoumání na <strong>mikroekonomii</strong> a <strong>makroekonomii</strong>:
         </p>
@@ -114,7 +114,7 @@ export default function UvodDoEkonomie() {
     {/* Další kapitola */}
     <div className="flex justify-end">
       <Link 
-        href="/zakladni-koncepty/metodologie-modely" 
+        href="/zakladni-koncepty/metodologie" 
         className="group flex items-start text-right gap-3 max-w-[280px] transition-all"
       >
         <div className="flex flex-col">

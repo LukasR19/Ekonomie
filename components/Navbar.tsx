@@ -83,13 +83,13 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-4">
-            {/* Tlačítko Podpořte mě */}
+            {/*
             <Link 
               href="/podporte-me"
               className="flex items-center gap-2 px-4 py-2 bg-blue-700 hover:bg-blue-500 text-white text-xs font-black uppercase tracking-widest rounded-full transition-all border border-blue-500 hover:border-blue-400 shadow-sm"
             >
               <Heart size={14} className="text-pink-300" /> Podpořte mě
-            </Link>
+            </Link>*/}
           </div>
         </div>
 
