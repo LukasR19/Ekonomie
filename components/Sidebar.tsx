@@ -45,13 +45,18 @@ export default function Sidebar() {
   const [openSection, setOpenSection] = useState<string | null>(null);
 
   // Efekt: Pokud uživatel přijde přímo na podstránku, automaticky otevřeme sekci v menu
-  useEffect(() => {
+useEffect(() => {
+    if (!pathname) return;
+    
     const activeChapter = CHAPTERS.find(c => pathname.startsWith(`/${c.slug}`));
-    if (activeChapter) {
+    
+    // OPRAVA: Přidali jsme podmínku "&& openSection !== activeChapter.slug"
+    // Pokud už je ta sekce otevřená, nedělej nic (nevolaj setOpenSection).
+    if (activeChapter && openSection !== activeChapter.slug) {
       setOpenSection(activeChapter.slug);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
-
   return (
     // Změna: fixed pozice, top-16 (pod navbarem), světlé pozadí bg-slate-50
     <aside className="fixed left-0 top-16 bottom-0 w-72 bg-slate-50 border-r border-slate-200 flex flex-col overflow-y-auto pb-10 z-40 scrollbar-thin scrollbar-thumb-slate-200">
