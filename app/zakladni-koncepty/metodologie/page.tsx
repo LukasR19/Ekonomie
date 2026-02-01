@@ -32,7 +32,7 @@ export default function UvodDoEkonomie() {
 
       {/* HLAVNÍ TEXT */}
       <article className="prose prose-slate max-w-none space-y-6 text-slate-600 leading-relaxed text-lg">
-        <p>Ekonomie se pohybuje na hraně mezi exaktní vědou a humanitním oborem. Ekonomové jsou jako vědci: pozorují svět, vytváří teorfie a ty se následně snaží ověřit.
+        <p>Ekonomie se pohybuje na hraně mezi exaktní vědou a humanitním oborem. Ekonomové jsou jako vědci: pozorují svět, vytváří teorie a ty se následně snaží ověřit.
             Ekonom však nemůže zavřít celou zemi nebo celý svět do zkumavky, aby své teorie mohl ověřit. Musí tak používat specifické nástroje.
             Kdybychom chtěl popsat třeba ekonomiku Česka v její úplnosti, museli bychom sledovat každou jednu transakci miliónů lidí a jejich okolnosti. To je pochopitelně nemožné.
             Ekonomové proto používají značnou míru abstrakce a tvoří takzvané <strong>modely</strong>.
@@ -57,6 +57,7 @@ export default function UvodDoEkonomie() {
             src="/img/Ekonomický oběh.png"
             alt="Diagram ekonomického oběhu"
             caption="Diagram ekonomického oběhu"
+
         />
                <p>
             Prvním modelem, který si zde představíme je ekonomický oběh. Jde o model proudění prostředků (peněz, statků) v ekonomice. 
@@ -70,7 +71,7 @@ export default function UvodDoEkonomie() {
            Pozitivní ekonomie se snaží objektivně popisovat a vysvětlovat náš svět a jak funguje ekonomika. Zkoumá „co je“. Normativní ekonomie přináší soudy a ddoporučení.
            Zkoumá „jak by to mělo být“. Ekonomové tak vystupují ve dvou rolích. V pozitivní ekonomii jako vědci a v normativní jako tvůrci ekonomických politik. 
         </p>
-                <ChecklistTable
+        <ChecklistTable
         title="Pozitvní nebo normativní tvrzení?"
         options={[
             { id: 'poz', label: 'Pozitivní' },
@@ -84,14 +85,21 @@ export default function UvodDoEkonomie() {
             ]}
         />
         <p>
-            Ekonomie využívá při výzkůmu různé metody, kterými múže dojít k závěru. 
-            Jednou z nich je <strong>indukce</strong>, tedy pozorování světa a vyvozování pravidel z něj. 
-            Tato metoda je základem pro empirický výzkum. Dále mohou ekonomové využívat <strong>dedukci</strong>.
-            Při této metodě si ekonom stanoví nějaká nezpochybnitelná pravidla (axiomy), ze kterých po té vyvuvozuje logickým postupem závěry.
+            Existuje více metodologických směrů, které se používají ke zkoumání našeho světa.
+            <strong> Apriorismus</strong> je založený na <strong>dedukci</strong>. Vychází z nezpochybnitelných tvrzení (axiomů), ze kterých se logickým postupem odvozují další zákony.
+            Statistiky nemohou teorii vyvrátit. Pokud data nesouhlasí s logicky odvozenou teorií, je chyba v datech nebo interpretaci. 
+            Pokud totiž není chyba v předpokladu a logickém postupu, musí zákony takto odvozené vždy být pravdivé.
+            Tento přístup dominuje klasické ekonomii a rakouské ekonomické škole.
+            <strong> Pozitivismus</strong> je přístup dnes převládající v ekonomii hlavního proudu. Jde o přístup založený na <strong>empirii</strong> a <strong>indukci</strong>. Ekonomické hypotézy hodnotíme podle toho, jak přesně dokáže popsat a předpovídat výsledky v reálém světě.
+            Teorie často vytváří pohledem na existující data, ze kterých po té vyvozuje závěry.
+
         </p>
         <p>
-            Oborem, který se zabývá analýzou, ověřováním a predikcí ekonomických jevů pomocí statistických metod je <strong>ekonometrie</strong>.
+            Oborem, který se zabývá analýzou, ověřováním a predikcí ekonomických jevů pomocí statistických metod je <strong>ekonometrie</strong>. Je klíčová pro pozitivistický přístup.
             Zatímco ekonomická teorie řekne: „Když lidem vzrostou příjmy, budou víc utrácet,“ ekonometrie spočítá: „Když lidem v Česku stoupne plat o 1 000 Kč, utratí v průměru o 750 Kč více.“
+        </p>
+        <p>
+            Na pomezí ekonomie a psychologie stojí <strong>behaviorální ekonomie</strong>, která odmítá homo economicus a snaží se na lidské jednání a ekonomické fenomény nahlížet skrze psychologii.
         </p>
         <p>
             To je vše o postupech a metodách ekonomického výzkumu. Příště se již podíváme na základní pojmy z ekonomie.

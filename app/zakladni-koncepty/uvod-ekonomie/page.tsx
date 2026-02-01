@@ -58,6 +58,11 @@ export default function UvodDoEkonomie() {
           To může vytvořit zajímavé situace, kdy lidé dokáží ekonomickou prognózu potvrdit či vyvrátit už jen tím, že se o ní dozví a na jejím základě změní své chování. Typickým příkladem budiž akciový trh. Pokud světová banka vydá prognózu, že trh v následujícím roce bude padat, lidé začnou na základě toho své akcie masivně prodávat, čímž prognózu potvrdí.
           V ekonomii je také zpravidla nemožné provádět experimenty s izolovanými proměnnými a spoléhá se tedy na teoretické modely a analýzu historických dat.
         </p>
+        <p>
+          Jako zakládající dílo ekonomie považujeme Bohatství národů skotského filosofa Adama Smitha z roku 1776.
+          V tomto díle z období průmyslové revoluce popisuje základy hospodářského růstu. Odtud pochází i slavná metfora „neviditelné ruky trhu“. 
+          Podle Smitha jsou zájmy společnosti nejlépe naplněny, když každý sleduje svůj vlastní zájem. „Neočekáváme, že svůj oběd dostaneme z dobré vůle řezníka, pivovarníka či pekaře, nýbrž v důsledku toho, že všichni jmenovaní sledují vlastní zájem.“
+        </p>
         <DefinitionBox title="ekonomie a ekonomika">
             Tyto dva pojmy se lidem často pletou. Ekonomie (angl. economics) je vědní obor a ekonomika (angl. economy) představuje hospodaření určitého celku. 
         </DefinitionBox>
@@ -73,7 +78,7 @@ export default function UvodDoEkonomie() {
             Často je to tím, jakou váhu přikládají různým faktorům, jaké modely používají nebo jaké proměnné se rozhodnou ve svých předpokladech zanedbat.
             Směry ekonomického myšlení se nazývají ekonomické školy. Různé ekonomické školy přistupují ke zkoumání stejných fenoménů různě. 
             Mezi známe ekonomické školy patří například rakouská ekonomická škola, keynesiánství nebo monetarismus. Školou, která dnes představuje mainstreamový přístup k ekonomické vědě je tzv. neokeynesiánství. 
-            Teorie tohoto proudu jsou dnes všeobecně přijímány jako základ ekonomické diskuse a neokeynesiánská ekonomie se vyučuje na univerzitách.
+            Teorie tohoto proudu jsou dnes všeobecně přijímány jako základ ekonomické diskuse.
         </p>
 
         {/* INTERAKTIVNÍ PRVEK (Otázka) */}
